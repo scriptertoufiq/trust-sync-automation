@@ -7,7 +7,7 @@ const password = process.env.PASSWORD;
 
 const authFile = path.join(__dirname, '../playwright/.auth/user.json');
 
-setup('authenticate', async ({ page }) => {
+setup('authenticate ', async ({ page }) => {
     
     // Perform authentication steps. Replace these actions with your own.
     await page.goto('https://admin.shopify.com/store/toufiq-automation-do-not-delete');
